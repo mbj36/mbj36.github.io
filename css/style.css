@@ -5,7 +5,7 @@
 border-radius: 8px;
     height:100%;
     width:26%;
-    
+    position:relative;
 }
 .img
 {
@@ -41,6 +41,11 @@ color:white;
     color:white;
     margin-left: 35%;
     margin-top: 10%;
+}
+.rightblock
+{
+    margin-left: 1%;
+    margin-top: -25%;
 }
 .container-fluid
 {
@@ -165,8 +170,13 @@ color:white;
 .side
 {
     width:100%;
-    height: 185%;
+    height: 145%;
 }
+    .rightblock
+    {
+    margin-top: 3%;
+        position:absolute;
+    }
     .container-fluid
     {
         margin-left: 0%;
