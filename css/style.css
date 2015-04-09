@@ -5,7 +5,9 @@
 border-radius: 8px;
     height:100%;
     width:26%;
-    position:relative;
+    margin-top:0%;
+    margin-bottom: 0%;
+    
 }
 .img
 {
@@ -45,13 +47,14 @@ color:white;
 .rightblock
 {
     margin-left: 1%;
-    margin-top: -25%;
+    margin-top:0%;
+
 }
 .container-fluid
 {
     margin-left: 37%;
     color:#4169E1;
-    margin-top: -45%;
+    margin-top: -43%;
     font-family: corbel;
     font-size: 35px;
 }
@@ -111,8 +114,8 @@ color:white;
 }
 .phone
 {
-   margin-left: 70%;
-    margin-top: -48%;
+   margin-left: 75%;
+    margin-top: 1.5%;
     color:#4169E1;
     position:absolute;
 }
