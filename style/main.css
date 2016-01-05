@@ -1,0 +1,10 @@
+input
+{
+    text-align: center;
+}
+.list-group-item
+{
+    font-size: 25px;
+    color: #333333;
+    font-family: sans-serif;
+}
