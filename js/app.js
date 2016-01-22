@@ -13,7 +13,6 @@
                 Entryno: $scope.entry,
                 Subject: $scope.sub
               });
-
               //RESET MESSAGE
               $scope.sub = "";
               $scope.entry = "";

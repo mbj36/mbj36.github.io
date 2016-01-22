@@ -21,13 +21,19 @@
         <label for="nameInput">Entry-No:</label>
         <input ng-model="entry" type="text" id="nameInput" placeholder="Enter Your Entry-number" class="form-control">
            <label>Subject:</label>
-             <input ng-model="sub" type="text" id="subjectInput" placeholder="Enter your open elective" class="form-control">
+             <input ng-model="sub" type="text" id="subjectInput" placeholder="Enter your open elective subject" class="form-control">
+
       </div>
-          <input type="submit" ng-click="addMessage($event)" value="Submit" class="btn btn-info">
+          <input type="submit" ng-click="addMessage($event)" value="Submit" class="btn btn-info" onclick="myfunction()">
         </form>
     </div>
+      <script>function myfunction()
+{
+      confirm("Submit it ?");
+}</script>
 
     <script src="js/app.js"></script>
+      <script src="js/main.js"></script>
   </body>
 </html>
  
