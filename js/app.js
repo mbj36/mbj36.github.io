@@ -1,27 +1,22 @@
-var app=angular.module("MyApp",[]);
-app.controller('TodoCtrl',function TodoCtrl($scope)
-               {
-  $scope.todos = [];
+ var myApp = angular.module("myApp", ["firebase"]);
 
-  $scope.addTodo = function() {
-    $scope.todos.push({text:$scope.todoText, done:false});
-    $scope.todoText = '';
-  };
+      myApp.controller("MyController", function($scope, $firebaseArray) {
+          //CREATE A FIREBASE REFERENCE
+          var ref = new Firebase("https://form-2014.firebaseio.com/");
 
-  $scope.remaining = function() {
-    var count = 0;
-    angular.forEach($scope.todos, function(todo) {
-      count += todo.done ? 0 : 1;
-    });
-    return count;
-  };
+          // GET MESSAGES AS AN ARRAY
+          $scope.messages = $firebaseArray(ref);
 
-  $scope.archive = function() {
-    var oldTodos = $scope.todos;
-    $scope.todos = [];
-    angular.forEach(oldTodos, function(todo) {
-      if (!todo.done) $scope.todos.push(todo);
-    });
-  };
-});
+          //ADD MESSAGE METHOD
+          $scope.addMessage = function() {//ADD TO FIREBASE
+              $scope.messages.$add({
+                Entryno: $scope.entry,
+                Subject: $scope.sub
+              });
 
+              //RESET MESSAGE
+              $scope.sub = "";
+              $scope.entry = "";
+          }
+        });
+ 

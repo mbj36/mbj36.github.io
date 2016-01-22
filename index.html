@@ -1,57 +1,35 @@
-<html>
-<head><title>Mohit Bajoria | Web Developer</title>
-    <link rel="shortcut icon" href="img\Screenshot_2015-04-04-01-30-04.png">
-     <meta charset="utf-8"> 
-     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="css\style.css"></head>
-<body>
-    <div class="side">
-         <img src="img\Screenshot_2015-04-04-01-30-04.png" class="img">
-        <div class="descr"><b>MOHIT BAJORIA</b></div>
-    <div class="web">Web Developer</div><hr>
-        <button type="button"class="btn btn-info" style="margin-left:36%;"><a href="https://www.quora.com/Mohit-Bajoria"><img src="img\quora.png"height="25px"width="55px"></a> </button>
-        <button type="button" class="btn btn-primary btn-block" style="margin-top:4%;"><i class="fa fa-home fa-2x"><a href="index.html"><font color="white"> Home</font></a></i></button>
-     <button type="button" class="btn btn-primary btn-block" style="margin-top:3%;"><i class="fa fa-cog fa-2x"><a href="Gallery.html"><font color="white"> My Gallery</font></a></i></button>
-     <button type="button" class="btn btn-primary btn-block" style="margin-top:3%;"><i class="fa fa-buysellads fa-2x"><a href="aboutme.html"><font color="white"> About Me</font></a></i></button>
- <div class="icons">
-    <a href="http://www.facebook.com/mohitbajoria36"><i class="fa fa-facebook-square fa-2x" style="color:white;"></i></a>&nbsp;&nbsp;
-         <a href="https://twitter.com/mbj36"><i class="fa fa-twitter fa-2x" style="color:white;"></i></a> &nbsp;&nbsp;   
-              <a href="https://github.com/mbj36"><i class="fa fa-github fa-2x" style="color:white;"></i></a>&nbsp;&nbsp;
-            <a href="http://stackoverflow.com/users/4752193/mohit-bajoria"><i class="fa fa-stack-overflow fa-2x" style="color:white;"></i></a>
-        </div>
-    <div class="dots"><i class="fa fa-circle"></i>       <i class="fa fa-circle"></i>    <i class="fa fa-circle"></i>    <i class="fa fa-circle"></i>      <i class="fa fa-circle"></i>    <i class="fa fa-circle"></i></div>
+<html ng-app="myApp">
+  <head>
+       <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>  
+      <link rel="stylesheet" href="style/main.css">
+  </head>
+
+  <body ng-controller="MyController">
+    <div class="container">
+      <h1>Welcome Guest :)</h1>
+        <h4>Enter your crediantials.</h4>
+
+      <form role="form" novalidate>
+          <div class="form-group">
+        <label for="nameInput">Entry-No:</label>
+        <input ng-model="entry" type="text" id="nameInput" placeholder="Enter Your Entry-number" class="form-control">
+           <label>Subject:</label>
+             <input ng-model="sub" type="text" id="subjectInput" placeholder="Enter your open elective" class="form-control">
+      </div>
+          <input type="submit" ng-click="addMessage($event)" value="Submit" class="btn btn-info">
+        </form>
     </div>
-    <div class="rightblock">
-    <div class="phone"><i class="fa fa-phone"></i> 8493894683</div>
-     <div class="container-fluid" style="border:1px solid #4169E1;">Hi,I'm MOhit kumar bajoria.</div>
-    <div class="latest"><b><i class="fa fa-quote-left fa-2x"></i><br>Latest Upvotes....</b></div>
-    <div class="qq"><i class="fa fa-dot-circle-o fa-1x" style="color:black;"></i><a href="qq.html"> What is The Most Epic Flowchart Ever Created?</a></div>
-    <div class="subqq"><a href="index.html">@ mohitbajoria</a>  <font color="black">[Sat 04 April 2015]</font></div>
-    <div class="qq1"><i class="fa fa-dot-circle-o fa-1x" style="color:black;"></i><a href="qq1.html"> How Can I Fully Utilise 2 Months Of Summer Break?I want To Learn Coding.Should I Start With HTML,CSS Or go With Python/PHP Or DJango?</a> </div>
-    <div class="subqq1"><a href="index.html">@ mohitbajoria</a>  <font color="black">[Sat 28 March 2015]</font></div>
-    <div class="qq2"><i class="fa fa-dot-circle-o fa-1x" style="color:black;"></i><a href="qq2.html"> What Are The Most Beautiful Line Ever Said Or Written?</a></div>
-    <div class="subqq2"><a href="index.html">@ mohitbajoria</a>  <font color="black">[Fri 17 feb 2015]</font></div>
-    <div class="star"><i class="fa fa-quote-right fa-3x"></i></div>
-    </div>
-    <a href="inde.html">todo</a>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </body>
 
-
-
-
-
+    <script src="js/app.js"></script>
+  </body>
 </html>
+ 
+
+    

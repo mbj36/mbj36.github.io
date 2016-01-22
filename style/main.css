@@ -1,10 +1,10 @@
-input
+.container
 {
-    text-align: center;
+    padding-top: 150px;
+    margin-left: 35%;
+    max-width: 400px;
 }
-.list-group-item
+body
 {
-    font-size: 25px;
-    color: #333333;
-    font-family: sans-serif;
+    background-color: #FAFAFA;
 }
