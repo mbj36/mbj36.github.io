@@ -1,0 +1,27 @@
+---
+layout:     post
+title:      "Selected in GSoC"
+subtitle: "Selected for Google Summer of Code under Mifos" 
+date:       2016-04-23 12:00:00
+author:     "Mohit"
+header-img: "img/GSoC.png"
+---
+
+
+I was waiting eagerly at the midnight for the my <a href="https://summerofcode.withgoogle.com">Google Summer of Code</a>
+GSOC
+Result. Anxiousness was at great height.I was almost sweating and couldn't sleep from last 30 hours. Then the result came out and i was SELECTED for the project which i made the proposal just 3 hours before the deadline. 
+
+<code>Yes ! I made it to GSOC ;)</code>
+
+It was the moment which will be cherished forever and then i shared the news with my family and friends. They all were super-duper happy for me.
+
+
+It really feels great to be a part of GSOC :D
+
+I got to learn about GSOC from my senior who is doing Cool stuffs in machine learning these days :D. Without his help it would be very much difficult for me to crack in my 2nd year only. A real Big Thanks to him.
+
+
+I was selected in GSOC under Mifos Initiative.
+
+Mifos is a diverse community of microfinance institutions, technology professionals, business people, volunteers, and contributors. I am really excited to start working on my project "Browser Based Offline access" this summer.

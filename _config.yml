@@ -1,10 +1,10 @@
 # Site settings
-title: Mohit
+title: Mohit | Developer
 header-img: img/home-bg.jpg
 email: mohitbajo36@gmail.com
 copyright_name: mbj36
 description: "Open source Enthusiast"
-baseurl: ""
+baseurl: "mbj36.github.io"
 url: "https://mbj36.github.io"
 twitter_username: mbj36
 github_username:  mbj36
