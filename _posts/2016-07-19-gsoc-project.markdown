@@ -4,7 +4,7 @@ title:      "My GSoC Project"
 subtitle: "Browser-based Offline Access" 
 date:       2016-07-19 12:00:00
 author:     "Mohit"
-header-img: "img/GSOC.png"
+header-img: "img/GSoC.png"
 ---
 
 Hello Everyone,
